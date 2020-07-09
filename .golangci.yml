@@ -1,0 +1,25 @@
+linters-settings:
+    goimports:
+      local-prefixes: github.com/exfly/container
+  
+  linters:
+    disable-all: true
+    enable:
+      - deadcode
+      - errcheck
+      - gofmt
+      - goimports
+      - gosimple
+      - govet
+      - ineffassign
+      - staticcheck
+      - structcheck
+      - typecheck
+      - unused
+      - varcheck
+  
+  run:
+    skip-dirs:
+      - api/
+      - module/
+  
